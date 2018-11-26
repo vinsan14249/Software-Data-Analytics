@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const app = express();
 const myapikey = 'uhl4cf3b5y'
 app.use(bodyParser.urlencoded({ extended: false }));
-var request = require('request');
+var req = require('request');
 
 app.get('/', (request, response) =>  response.sendFile(`${__dirname}/index.html`));
 
@@ -17,17 +17,22 @@ app.post('/api/data', (request, response) => {
   pref = postBody.data[4];
   quota = postBody.data[5];
 
-    url = 'https://api.railwayapi.com/v2/check-seat/train/'+trainNo+'/source/'+sourceSC+'/dest/'+destSC+'/date/'+date+'/pref/'+pref+'/quota/'+quota+'/apikey/'+myapikey+'/';
-request(url ,{json:true},(err,res,body) => {
-	if (err) {return console.log(err);}
-  console.log(body.url);
-  console.log(body.explanation);
-	
-}); 
-   
+URL = 'https://api.railwayapi.com/v2/check-seat/train/'+trainNo+'/source/'+sourceSC+'/dest/'+destSC+'/date/'+date+'/pref/'+pref+'/quota/'+quota+'/apikey/'+myapikey+'/';
 
+ var options = {
+    url: URL,
+    method: 'GET'
+  };  
 
-response.send(postBody);
+req(options, function(err, res, body) {
+    if (err) console.error(err);
+    else {
+      data = JSON.parse(body);
+response.json({Data:data});
+    }
+  });
+
+//response.json(postBody);
 });
 
 app.listen(3000, () => console.info('Application running on port 3000'));
