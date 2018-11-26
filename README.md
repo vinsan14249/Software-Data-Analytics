@@ -1,13 +1,13 @@
-# Software-Data-Analytics
+### Software-Data-Analytics
 
 ## Data Analytics  :
 
-1. Visualization :              Task is pending
-2. Data Analytics :             
+
+1. Data Analytics :             
     * PlotProgram.py  :        Task is done
     * ManipulationProgram.py :   Task is done
     
-3.  A programming question based on python. : Task is done
+2.  A programming question based on python. : Task is done
   
  	BinaryStringsSet : Program that takes two arguments n and k and prints all binary strings of length n that contain k zero bits, one per line. The program:
          Must be called binary.py
@@ -17,7 +17,11 @@
 
 Run the unit tests to ensure that the program is correct.
 
-## Software Development  :     Task is partially pending
+3. Visualization :              Task is pending
+
+## Software Development  :     
+#  	WebAppForTrainEnquiry
+Task is partially pending
 
 Use Node.js Framework     : using Express.js
 Database: MongoDB         : No integration right now
