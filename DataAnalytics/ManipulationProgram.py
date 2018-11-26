@@ -1,5 +1,4 @@
 import pandas as pd
-import numpy as np
 import matplotlib.pyplot as plt
 
 filename='Data/test_dataset.csv'
@@ -49,7 +48,7 @@ print(df5)
 
 
 
-ax = df5[['GR','date']].plot(kind='bar', title ="V comp", figsize=(15, 10), legend=True, fontsize=12)
+ax = df5[['GR','date']].plot(kind='bar', title ="Plot GR for SNS", figsize=(15, 10), legend=True, fontsize=12)
 ax.set_xlabel("Date", fontsize=12)
 ax.set_ylabel("GR for SNS", fontsize=12)
 plt.show()

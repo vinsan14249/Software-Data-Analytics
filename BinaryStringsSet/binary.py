@@ -33,3 +33,7 @@ def permutate(n,k):								#func to create permutation for binary string
 			arr.append(s)
 	return arr
 
+#bits(4,3)
+#bits(3,3)
+#bits(5,3)
+
