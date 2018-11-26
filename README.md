@@ -1,8 +1,6 @@
 # Software-Data-Analytics
 
-
-
-##Data Analytics  :
+## Data Analytics  :
 
 1. Visualization :              Task is pending
 2. Data Analytics :             
@@ -19,7 +17,7 @@
 
 Run the unit tests to ensure that the program is correct.
 
-##Software Development  :     Task is partially pending
+## Software Development  :     Task is partially pending
 
 Use Node.js Framework     : using Express.js
 Database: MongoDB         : No integration right now
