@@ -4,9 +4,12 @@
 
 ##Data Analytics  :
 
-1. PFA the visualization assignment on which you have to work. 
-2. PFA the DSA assignment.
-3.  A programming question based on python.
+1. Visualization :              Task is pending
+2. Data Analytics :             
+    * PlotProgram.py  :        Task is done
+    * ManipulationProgram.py :   Task is done
+    
+3.  A programming question based on python. : Task is done
   
  	BinaryStringsSet : Program that takes two arguments n and k and prints all binary strings of length n that contain k zero bits, one per line. The program:
          Must be called binary.py
@@ -16,10 +19,10 @@
 
 Run the unit tests to ensure that the program is correct.
 
-##Software Development  :
+##Software Development  :     Task is partially pending
 
-Use Node.js Framework 
-Database: MongoDB
+Use Node.js Framework     : using Express.js
+Database: MongoDB         : No integration right now
 
 Web application which uses railway's api (https://railwayapi.com/api/#seat-availability) to get seat availability status.
 Input Fields : Train number , From station , To station , date , class , quota
