@@ -9,6 +9,7 @@ var req = require('request');
 app.get('/', (request, response) =>  response.sendFile(`${__dirname}/index.html`));
 
 app.post('/api/data', (request, response) => {
+console.log(request);
   const postBody = request.body;
   trainNo = postBody.data[0];
   sourceSC = postBody.data[1];
@@ -28,6 +29,7 @@ req(options, function(err, res, body) {
     if (err) console.error(err);
     else {
       data = JSON.parse(body);
+	console.log(data);
 response.json({Data:data});
     }
   });
